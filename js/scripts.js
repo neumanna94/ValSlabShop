@@ -24,7 +24,7 @@ function generateAllSlabs() {
   newSlab = new Slab("Black Walnut", 15, 5, 2.25, 1600, "img/Three.jpg");
   slabs.push(newSlab);
   for(var i = 0; i < 100; i ++){
-    newSlab = new Slab(species[(species.length-1)%i], i%15, i%5, 2.25, i*10, "img/Four.jpeg");
+    newSlab = new Slab(species[(species.length-1)%i], i%15, i%5, 2.25, i*10, "img/four.jpeg");
     slabs.push(newSlab);
   }
   for(var i = 1; i <= 15; i ++){
