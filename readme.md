@@ -14,8 +14,11 @@ then,
 $ ng serve
 ```
 ## Specifications
-Building Out Your Application
-Once you have built out the basic structure of your application and separated the code into working components, consider adding:
+This project goal is to outline the development process for a friends future business website.
+The goal of this site is to manage a database and website display for a slab business that is scalable up to 10,000 people.
+Furthermore, the main objective is to allow people to easily and freely view the logs on display. While providing easy contact and order requests.
+In order to ensure this objective is reached, I will be using the Angular framework to make an agile and responsive page while generating content from a Firebase server or API calls.
+
 ## Objectives[Given by Epicodus]:
 1. More directives (practice with ngIf, ngFor, and more).
   - ngIf[Conditionally Generate this View from JavaScript]
