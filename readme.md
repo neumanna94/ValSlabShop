@@ -13,43 +13,53 @@ then,
 ```sh
 $ ng serve
 ```
+## Specifications
+Building Out Your Application
+Once you have built out the basic structure of your application and separated the code into working components, consider adding:
+##Objectives[Given by Epicodus]:
+1. More directives (practice with ngIf, ngFor, and more).
+  - ngIf[Conditionally Generate this View from JavaScript]
+  - ngFor[Generate Database Content in View]
+2. Full CRUD functionality that changes your models.
+  - Updating the database model from the View.
+3. Firebase (a noSQL database) isntead of a hard-coded dataset.
+  - Connecting to a noSQL database and operating CRUD operations.
+  - Seed data for your database.
+4. Pipes for Filtering data.
+5. A router for adding additional pages.
+  - Pointing to actions of routes.
+6. Authentication and route guards.
+  - Finding a project for authentication.
+7. Deployment(as a dry run for next week)
+  - Using Google or Amazon webservices for deployment.
+8. API Calls
+  - Using API calls to dynamically generate page content or change database values.
+9. CSS Styling
+  - Following a recommendation and website references for generating page for user interfacing.
+10. Tests using Jasmine and Protractor
+  - Unit Testing your code to reliability.
+##Objectives[Brainstorm]:
+10. Provide display of slab database correctly to many users.
+11. Provide contact information of supplier.
+12. Provide individual slab detail page.
+13. Provide order support to supply chain of owner.
+14. Connect to database for generating content and updating.
+##Time Frame
+1. Generate from Gantss Chart generator for project.
 ## Technologies Used
-* **npm(node package manager)**
+* **Angular**
 * **Javascript**
 * **HTML**
 * **CSS**
 * **Bootstrap**
-* **jQuery**
-## Specifications
-Building Out Your Application
-Once you have built out the basic structure of your application and separated the code into working components, consider adding:
-##Objectives:
-* **More directives (practice with ngIf, ngFor, and more).**
-* ***ngIf for generating filtering.?***
-* **ngFor for dynamically generating view content from database reference**
-* **Full CRUD functionality that changes your models.**
-* **Updating the database model from the View.**
-* **Firebase (a noSQL database) instead of a hard-coded dataset.**
-* **Connecting to a noSQL database and operating CRUD operations.**
-* **Seed data for your database.**
-* **Pipes for filtering data.**
-
-
-* **A router for adding additional pages.**
-* **Pointing to actions of routes**
-* **Authentication and route guards.**
-* **Finding a project for authentication making hack proof.**
-* **Deployment (as a dry run for next week).**
-* **Using Google or Amazon webservices for deploying your app.**
-* **API calls.**
-* **Using API calls to dynamically generate page content or change database values.**
-* **CSS styling.**
-* **Following a recommendation and website references for generating the page for user interfacing.**
-* **Tests using Jasmine and Protractor.**
-* **Unit testing your code to ensure reliability.**
-
-
-
 ## References
+Google Drive Reference:
+```sh
+https://docs.google.com/document/d/1DAgQjSwgEwOUR9FieeDDoH4sIDim5aqy9LRHGtQH_s4/edit?usp=sharing
+```
+Readme
+```sh
+http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+```
 ## Support & Contact Details
 alexander.daniel.neumann@gmail.com
