@@ -16,7 +16,7 @@ $ ng serve
 ## Specifications
 Building Out Your Application
 Once you have built out the basic structure of your application and separated the code into working components, consider adding:
-##Objectives[Given by Epicodus]:
+## Objectives[Given by Epicodus]:
 1. More directives (practice with ngIf, ngFor, and more).
   - ngIf[Conditionally Generate this View from JavaScript]
   - ngFor[Generate Database Content in View]
@@ -38,13 +38,13 @@ Once you have built out the basic structure of your application and separated th
   - Following a recommendation and website references for generating page for user interfacing.
 10. Tests using Jasmine and Protractor
   - Unit Testing your code to reliability.
-##Objectives[Brainstorm]:
+## Objectives[Brainstorm]:
 10. Provide display of slab database correctly to many users.
 11. Provide contact information of supplier.
 12. Provide individual slab detail page.
 13. Provide order support to supply chain of owner.
 14. Connect to database for generating content and updating.
-##Time Frame
+## Time Frame
 1. Generate from Gantss Chart generator for project.
 ## Technologies Used
 * **Angular**
