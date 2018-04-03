@@ -50,7 +50,7 @@ In order to ensure this objective is reached, I will be using the Angular framew
 ## Time Frame
 1. Generate from Gantss Chart generator for project.
 ## Technologies Used
-* **Angular**
+* **Angular[To be implemented]**
 * **Javascript**
 * **HTML**
 * **CSS**
