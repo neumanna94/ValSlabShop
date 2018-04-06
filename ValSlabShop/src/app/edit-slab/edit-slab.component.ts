@@ -19,4 +19,9 @@ export class EditSlabComponent implements OnInit {
   beginUpdatingSlab(slabToUpdate){
     this.slabService.updateSlab(slabToUpdate);
   }
+  beginDeletingSlab(slabToDelete){
+  if(confirm("Are you sure you want to delete this item from the inventory?")){
+    this.slabService.deleteSlab(slabToDelete);
+  }
+}
 }

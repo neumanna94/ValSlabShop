@@ -24,5 +24,9 @@ export class SlabService {
                                 length: localUpdatedSlab.length,
                                 width: localUpdatedSlab.width, depth: localUpdatedSlab.depth, price: localUpdatedSlab.price, description: localUpdatedSlab.description, imgUrl: localUpdatedSlab.imgUrl});
   }
+  deleteSlab(localSlabToDelete){
+    var slabEntryInFirebase = this.getSlabById(localSlabToDelete.$key);
+    slabEntryInFirebase.remove();
+  }
 
 }
