@@ -1,3 +1,7 @@
-<p>
-  marketplace works!
-</p>
+<h2>Marketplace</h2>
+
+<div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{slab.species}}</em> by {{album.length}}</h3>
+  </div>
+</div>

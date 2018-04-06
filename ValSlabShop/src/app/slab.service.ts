@@ -15,5 +15,9 @@ export class SlabService {
     return this.slabs;
   }
 
+  getSlabById(slabId: string){
+    return this.database.object('slabs/' + slabId);
+  }
+
 
 }

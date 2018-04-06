@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { SlabService } from '../slab.service';
 import { Location } from '@angular/common';
 import { Slab } from '../slab.model';
-import { SlabService } from '../slab.service';
 
 @Component({
   selector: 'app-slab-detail',
@@ -11,7 +11,8 @@ import { SlabService } from '../slab.service';
   providers: [SlabService]
 })
 export class SlabDetailComponent implements OnInit {
-
+  slabId: string;
+  slabToDisplay;
   constructor(
   private route: ActivatedRoute,
   private location: Location,
@@ -19,6 +20,9 @@ export class SlabDetailComponent implements OnInit {
 ) {}
 
   ngOnInit() {
-  }
-
+    this.route.params.forEach((urlParameters) => {
+     this.slabId = urlParameters['id'];
+   });
+   this.slabToDisplay = this.slabService.getSlabById(this.slabId);
+ }
 }
