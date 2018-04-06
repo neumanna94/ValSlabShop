@@ -1,3 +1,51 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Album to Inventory</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Slab Species</label>
+        <br>
+        <input #newSpecies>
+      </div>
+
+      <div>
+        <label>Slab Length</label>
+        <br>
+        <input #newLength>
+      </div>
+
+      <div>
+        <label>Slab Width</label>
+        <br>
+        <textarea #newWidth></textarea>
+      </div>
+
+      <div>
+        <label>Slab Depth</label>
+        <br>
+        <textarea #newDepth></textarea>
+      </div>
+
+      <div>
+        <label>Slab Price</label>
+        <br>
+        <textarea #newPrice></textarea>
+      </div>
+
+      <div>
+        <label>Slab Description</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Slab imgUrl</label>
+        <br>
+        <textarea #newImgUrl></textarea>
+      </div>
+      <button (click)="submitForm(newSpecies.value, newLength.value, newWidth.value, newDepth.value, newPrice.value, newDescription.value, newImgUrl.value)">Add</button>
+    </div>
+  </div>
+</div>
