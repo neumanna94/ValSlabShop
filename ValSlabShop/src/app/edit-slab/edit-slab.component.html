@@ -1,0 +1,26 @@
+<h4>Edit Slab</h4>
+
+<label>New Slab Species:</label>
+<input [(ngModel)]="selectedSlab.species">
+<br>
+
+<label>New Slab Length:</label>
+<input [(ngModel)]="selectedSlab.length">
+<br>
+
+<label>New Slab Width:</label>
+<input [(ngModel)]="selectedSlab.width">
+
+<label>New Slab Depth:</label>
+<input [(ngModel)]="selectedSlab.depth">
+
+<label>New Slab Price:</label>
+<input [(ngModel)]="selectedSlab.price">
+
+<label>New Slab description:</label>
+<input [(ngModel)]="selectedSlab.description">
+
+<label>New Slab imgUrl:</label>
+<input [(ngModel)]="selectedSlab.imgUrl">
+
+<button (click)="beginUpdatingSlab(selectedSlab)">Update</button>

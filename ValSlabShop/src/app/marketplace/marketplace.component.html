@@ -2,6 +2,10 @@
 
 <div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{slab.species}}</em> by {{album.length}}</h3>
+    <h3><em>{{slab.species}}</em> by {{slab.width}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{slab.description}}
+      <hr>
+      <app-edit-slab [selectedSlab]="slab"></app-edit-slab>
   </div>
 </div>

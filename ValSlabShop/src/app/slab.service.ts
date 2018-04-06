@@ -18,6 +18,11 @@ export class SlabService {
   getSlabById(slabId: string){
     return this.database.object('slabs/' + slabId);
   }
-
+  updateSlab(localUpdatedSlab){
+    var slabEntryInFirebase = this.getSlabById(localUpdatedSlab.$key);
+    slabEntryInFirebase.update({species: localUpdatedSlab.species,
+                                length: localUpdatedSlab.length,
+                                width: localUpdatedSlab.width, depth: localUpdatedSlab.depth, price: localUpdatedSlab.price, description: localUpdatedSlab.description, imgUrl: localUpdatedSlab.imgUrl});
+  }
 
 }

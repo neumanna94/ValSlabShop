@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { EditSlabComponent } from './edit-slab/edit-slab.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     SlabDetailComponent,
     AboutComponent,
-    AdminComponent
+    AdminComponent,
+    EditSlabComponent
   ],
   imports: [
     BrowserModule,
