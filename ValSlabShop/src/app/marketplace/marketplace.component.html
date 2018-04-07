@@ -1,11 +1,54 @@
-<h2>Marketplace</h2>
-
-<div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{slab.species}}</em> by {{slab.width}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      {{slab.description}}
-      <hr>
-      <app-edit-slab [selectedSlab]="slab"></app-edit-slab>
+<div class="container-flex">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12" id="filterSection">
+              <h3> Filter Section </h3>
+            </div>
+            <div class="col-md-3 bg-light vertical-menu">
+              <h4> Find by Species {{test}} </h4>
+              <hr>
+              <ul id="speciesFilter">
+                <li *ngFor="let spec of species"><a href="#"> {{spec}} </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 bg-light vertical-menu">
+              <h4> Find by Length </h4>
+              <hr>
+              <ul id="lengthFilter vertical-menu">
+                <li *ngFor="let length of lengths"><a href="#"> {{length}} </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 bg-light vertical-menu">
+              <h4> Find by Width </h4>
+              <hr>
+              <ul id="widthFilter">
+                <li *ngFor="let width of widths"><a href="#"> {{width}} </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 bg-light vertical-menu">
+              <h4> Find by Thickness </h4>
+              <hr>
+              <ul id="thicknessFilter">
+                <li *ngFor="let depth of depths"><a href="#"> {{depth}} </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="panel panel-default">
+      <div class="panel-body">
+        <h3><em>{{slab.species}}</em> by {{slab.width}}</h3>
+        <div *ngIf="currentRoute === '/admin'">
+          {{slab.description}}
+          <hr>
+          <app-edit-slab [selectedSlab]="slab"></app-edit-slab>
+      </div>
+    </div>
   </div>
+
+  </div>
+
 </div>

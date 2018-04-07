@@ -1,0 +1,17 @@
+.vertical-menu {
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+}
+#filterSection {
+  background-color: #f9f9f9;
+}
+#filterSection h3{
+  text-align: center;
+}
