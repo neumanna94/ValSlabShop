@@ -8,7 +8,7 @@
               <h3> Filter Section </h3>
             </div>
             <div class="col-md-3 bg-light vertical-menu">
-              <h4> Find by Species {{test}} </h4>
+              <h4> Find by Species </h4>
               <hr>
               <ul id="speciesFilter">
                 <li *ngFor="let spec of species"><a href ="#" (click)="onClick($event.target.value)"> {{spec}} </a></li>
@@ -38,17 +38,11 @@
           </div>
         </div>
       </div>
-    <div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="panel panel-default">
-      <div class="panel-body">
-        <h3><em>{{slab.species}}</em> by {{slab.width}}</h3>
-        <div *ngIf="currentRoute === '/admin'">
-          {{slab.description}}
-          <hr>
-          <app-edit-slab [selectedSlab]="slab"></app-edit-slab>
+      <div *ngFor="let slab of slabs | async" (click)="goToDetailPage(slab)" class="col-md-4">
+        <h2> TEST</h2>
+        <a href='#'><div class='card' style='width: 18rem;'><img class='card-img-top' src='" + {{slab.imgUrl}} + "' height='200px' width = '200px'><div class = 'card-body'><h5 class='card-title'>" +{{slab.species}}+"</h5><h5 class='card-title'>" + {{slab.length}} + "x" + slab.width + "x" + {{slab.depth}} + "</h5><p class='card-text'>Price: $" + {{slab.price}} + "</p></div></div></a>
+      </div>
+      <app-edit-slab [selectedSlab]="slab"></app-edit-slab>
       </div>
     </div>
   </div>
-
-  </div>
-
-</div>

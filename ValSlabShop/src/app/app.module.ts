@@ -18,6 +18,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditSlabComponent } from './edit-slab/edit-slab.component';
 
+import { ImageUploadModule } from "angular2-image-upload";
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -43,7 +44,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    ImageUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

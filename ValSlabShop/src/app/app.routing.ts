@@ -9,7 +9,7 @@ import { SlabDetailComponent } from './slab-detail/slab-detail.component';
 
 const appRoutes: Routes = [
   {
-    path: 'welcome',
+    path: '',
     component: WelcomeComponent
   },
   {
