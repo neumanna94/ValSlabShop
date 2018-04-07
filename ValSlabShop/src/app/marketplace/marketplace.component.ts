@@ -17,12 +17,20 @@ export class MarketplaceComponent implements OnInit {
   widths: string[] = ["1", "2", "3", "4+"];
   depths: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12+"];
   currentRoute: string = this.router.url;
+  filterVariable: string;
+  filterAmount: string;
   constructor(private router: Router, private slabService: SlabService) { }
   ngOnInit() {
     this.slabs = this.slabService.getSlabs();
   }
   goToDetailPage(clickedSlab){
     this.router.navigate(['slabs', clickedSlab.$key]);
+  }
+
+  onClick(filterAmount){
+
+    this.filterAmount = filterAmount;
+    console.log(this.filterAmount);
   }
 
 

@@ -1,4 +1,4 @@
-<div class="container-flex">
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="container">
@@ -11,7 +11,7 @@
               <h4> Find by Species {{test}} </h4>
               <hr>
               <ul id="speciesFilter">
-                <li *ngFor="let spec of species"><a href="#"> {{spec}} </a></li>
+                <li *ngFor="let spec of species"><a href ="#" (click)="onClick($event.target.value)"> {{spec}} </a></li>
               </ul>
             </div>
             <div class="col-md-3 bg-light vertical-menu">

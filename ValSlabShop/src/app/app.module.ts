@@ -11,10 +11,13 @@ import { SlabDetailComponent } from './slab-detail/slab-detail.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 
+import { FilterPipe } from './filterPipe.pipe';
+
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { EditSlabComponent } from './edit-slab/edit-slab.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +34,8 @@ export const firebaseConfig = {
     SlabDetailComponent,
     AboutComponent,
     AdminComponent,
-    EditSlabComponent
+    EditSlabComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
