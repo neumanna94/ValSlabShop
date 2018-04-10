@@ -1,5 +1,8 @@
 # Vals Slab Shop[Angular]
 
+## Deployment Link
+https://github.com/neumanna94/ValSlabShop
+
 ## Set-up Installation
 
 First, clone from `https://github.com/neumanna94/ValSlabShop`.
